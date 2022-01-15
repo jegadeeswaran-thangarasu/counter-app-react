@@ -25,7 +25,7 @@ class Movies extends Component {
 
     handleDelete(deletedMovie) {
         console.log('deleted movie', deletedMovie);
-        const undeletedMovies = this.state.movies.filter(movie => movie._id !== deletedMovie._id);
+        const undeletedMovies = this.props.movies.filter(movie => movie._id !== deletedMovie._id);
         this.setState({movies: undeletedMovies});
     }
 
