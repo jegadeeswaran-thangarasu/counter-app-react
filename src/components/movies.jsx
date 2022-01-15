@@ -34,17 +34,14 @@ class Movies extends Component {
         movies[index] = {...movies[index]}
         movies[index].liked = !movies[index].liked;
         this.setState({ movies });
-        console.log('Clicked like', movie);
     }
 
     handlePageChange = (page) => {
-        console.log('page change... ', page);
         this.setState({ currentPage: page})
     }
 
     handleGenreSelect = genre => {
         this.setState({ selectedGenre: genre, currentPage: 1, pageSize: 4 });
-        console.log('genre', genre);
     }
 
     handleSort = sortColumn => {
