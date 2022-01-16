@@ -5,15 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css'
+import { BrowserRouter } from 'react-router-dom';
 // import Counter from './components/counter'
 // import Movies from './components/movies';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     {/* <Counter /> */}
     {/* <Movies></Movies> */}
     <App></App>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
